@@ -20,6 +20,7 @@ def send_text(message):
     elif message.text.lower() == 'какой сегодня день недели?':
         days = ['понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота', 'воскресенье']
         bot.send_message(message.chat.id, days[datetime.datetime.today().weekday()])
+        bot.send_message(message.chat.id, days[datetime.datetime.today().weekday()])
 
 
 bot.polling()
