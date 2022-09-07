@@ -21,6 +21,7 @@ def send_text(message):
         days = ['понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота', 'воскресенье']
         bot.send_message(message.chat.id, days[datetime.datetime.today().weekday()])
         bot.send_message(message.chat.id, days[datetime.datetime.today().weekday()])
+        bot.send_message(message.chat.id, days[datetime.datetime.today().weekday()])
 
 
 bot.polling()
